@@ -1,0 +1,453 @@
+.xs-visible {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .car_text2 {
+    display: none;
+  }
+  .lines_bg .car_text {
+    top: 57%;
+    font-size: 16px;
+  }
+  .footer .OSS {
+    top: 43px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-size: 13px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .reasons_block {
+    -webkit-box-align: fle-start;
+    -ms-flex-align: fle-start;
+    align-items: fle-start;
+  }
+  .reasons .text_block {
+    width: 300px;
+  }
+  .subheader_official {
+    font-size: 11px;
+  }
+  .mobile_flex {
+    max-width: none;
+    margin-left: 87px;
+  }
+  .car_text2 {
+    display: none;
+  }
+  .lines_bg .car_text {
+    top: 60%;
+  }
+  .footer .main_hrefs {
+    padding: 0 304px;
+  }
+  .footer .second_hrefs {
+    padding: 0 267px;
+  }
+  .footer .OSS {
+    top: 43px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu_item {
+    padding-right: 8px;
+  }
+  .menu_link {
+    font-size: 10px;
+  }
+  .subheader_logo img {
+    width: 100%;
+  }
+  .subheader_phone {
+    font-size: 18px;
+  }
+  .subheader_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 21px;
+  }
+  .promo_header {
+    font-size: 39px;
+  }
+  .promo_subheader {
+    font-size: 29px;
+  }
+  .reasons_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .reasons .image_block {
+    margin-right: 0;
+  }
+  .reasons .text_block {
+    margin-top: 20px;
+  }
+  .mobile_flex {
+    margin-left: 0;
+  }
+  .footer .main_hrefs {
+    padding: 0 100px;
+  }
+  .footer .second_hrefs {
+    padding: 0 100px;
+  }
+  .lines_bg .car_text {
+    top: 74%;
+  }
+  .footer {
+    padding: 25px 0 20px 0;
+  }
+  .footer .main_hrefs {
+    margin-top: 22px;
+    padding: 0 159px;
+  }
+  .footer .second_hrefs {
+    margin-top: 10px;
+    padding: 0 221px 0 231px;
+  }
+  .footer .OSS {
+    position: static;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .footer .icons {
+    position: static;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.6s all;
+    -o-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .menu_active {
+    left: 0;
+  }
+  .menu_item {
+    padding: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  .menu_link {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+    -ms-transform: translateY(3px) rotate(-45deg);
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+    -ms-transform: translateY(3px) rotate(45deg);
+    transform: translateY(3px) rotate(45deg);
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .promo_header {
+    line-height: 45px;
+  }
+  .car .eight_r {
+    font-size: 35px;
+  }
+  .car .subtitle {
+    font-size: 16px;
+  }
+  .car .h_round .car_img {
+    width: 100%;
+    top: 40%;
+  }
+  .car .h_round .half_round {
+    width: 80%;
+  }
+  .car .h_round .uberX_logo {
+    top: 17px;
+    width: 25%;
+  }
+  .lines_bg .car_text {
+    top: 54%;
+    font-size: 16px;
+  }
+  .footer {
+    padding: 25px 0 20px 0;
+  }
+  .footer .main_hrefs {
+    margin-top: 22px;
+    padding: 0 95px;
+  }
+  .footer .second_hrefs {
+    margin-top: 10px;
+    padding: 0 126px 0 136px;
+  }
+}
+
+@media (max-width: 575px) {
+  .subheader {
+    margin-top: 30px;
+    height: 60px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  .subheader_phone {
+    font-size: 12px;
+    margin-top: 11px;
+  }
+  .promo {
+    min-height: 400px;
+    padding-top: 130px;
+    padding-bottom: 35px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_header {
+    font-size: 29px;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 19px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  .menu {
+    width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
+  }
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  .reasons .eight_r {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 14px;
+  }
+  .reasons_block {
+    margin-top: 26px;
+  }
+  .reasons .image_block {
+    width: 100px;
+    height: 100px;
+  }
+  .reasons .text_block {
+    width: 100%;
+    margin-top: 27px;
+  }
+  .reasons .topic {
+    font-size: 16px;
+  }
+  nav {
+    height: 30px;
+  }
+  .mobile {
+    padding: 21px 0 43px 0;
+  }
+  .mobile .eight_r {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+  .mobile .subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 11px;
+  }
+  .mobile_item {
+    width: 290px;
+  }
+  .footer .main_hrefs {
+    padding: 0 50px;
+  }
+  .footer .second_hrefs {
+    padding: 0 50px;
+  }
+  .lines_bg {
+    display: none;
+  }
+  .car {
+    padding-top: 28px;
+    height: 390px;
+  }
+  .car .h_round .uberX_logo {
+    top: 12px;
+    width: 19%;
+  }
+  .car .h_round .car_img {
+    padding-bottom: 60px;
+  }
+  .car .car_text2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .car .eight_r {
+    display: none;
+  }
+  .car .subtitle {
+    display: none;
+  }
+  .require {
+    padding: 25px 0 26px 0;
+  }
+  .require .eight_r {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .require_block {
+    margin-top: 22px;
+  }
+  .require_block .require_title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .require_block .require_list {
+    padding-left: 35px;
+  }
+  .require_block .require_list li {
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .require_block .require_descr {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .map {
+    padding: 25px 0 30px 0;
+    height: 360px;
+  }
+  .map .eight_r {
+    margin-top: 15px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .map .subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .map .make_it_wide {
+    display: none;
+  }
+  .footer {
+    padding: 25px 0 20px 0;
+  }
+  .footer .main_hrefs {
+    margin-top: 22px;
+    padding: 0px;
+  }
+  .footer .second_hrefs {
+    margin-top: 10px;
+    padding: 0 20px 0 30px;
+  }
+}
+
+/*# sourceMappingURL=_media.css.map */

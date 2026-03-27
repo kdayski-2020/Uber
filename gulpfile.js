@@ -1,43 +1,34 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync");
-const sass = require("gulp-sass");
-const rename = require("gulp-rename");
-const autoprefixer = require("gulp-autoprefixer");
-const cleanCSS = require("gulp-clean-css");
 
-// Static server
-gulp.task("server", function() {
+const staticPaths = [
+  "index.html",
+  "css/**/*",
+  "js/**/*",
+  "images/**/*",
+  "fonts/**/*"
+];
+
+function copy() {
+  return gulp
+    .src(staticPaths, { base: ".", allowEmpty: true })
+    .pipe(gulp.dest("dist"));
+}
+
+function serve(done) {
   browserSync.init({
     server: {
-      baseDir: "src"
+      baseDir: "dist"
     }
   });
-});
+  gulp.watch(staticPaths, gulp.series(copy, function reload(done) {
+    browserSync.reload();
+    done();
+  }));
+  done();
+}
 
-gulp.task("styles", function() {
-  return gulp
-    .src("src/css/*.+(scss|sass)")
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-    .pipe(
-      rename({
-        prefix: "",
-        suffix: ".min"
-      })
-    )
-    .pipe(
-      autoprefixer({
-        browsers: ["last 2 versions"],
-        cascade: false
-      })
-    )
-    .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(gulp.dest("src/css"))
-    .pipe(browserSync.stream());
-});
-
-gulp.task("watch", function() {
-  gulp.watch("src/sass/*.+(scss|sass)", gulp.parallel("styles"));
-  gulp.watch("src/*.html").on("change", browserSync.reload);
-});
-
-gulp.task("default", gulp.parallel("watch", "server", "styles"));
+gulp.task("copy", copy);
+gulp.task("build", copy);
+gulp.task("server", gulp.series("copy", serve));
+gulp.task("default", gulp.series("copy", serve));
